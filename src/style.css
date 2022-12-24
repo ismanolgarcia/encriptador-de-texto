@@ -86,6 +86,9 @@ body {
   background-color: var(--color-dark-boton);
   color: var(--color-white);
 }
+.button--copy {
+  width: 100% !important
+}
 .ouput {
   width: 300px;
   height: 650px;
@@ -97,6 +100,18 @@ body {
   align-items: center;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.07) 10px 10px 10px;
+}
+
+.content__ouput {
+  width: 220px;
+  height: 570px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  padding: 40px;
+  text-align: left;
+  align-items: flex-start;
+  word-break: break-all;
 }
 
 .ouput__muneco {
@@ -165,8 +180,9 @@ body {
     bottom: auto;
   }
 
-  .ouput {
-    width: 90%;
+  .ouput,
+  .content__ouput {
+    width: 70%;
     height: 350px;
   }
   .ouput__muneco {
@@ -207,6 +223,11 @@ body {
     margin-top: 120px;
   }
 
+  .content__ouput {
+    width: 73%;
+    height: auto;
+    margin-top: 120px;
+  }
   .ouput__muneco {
     visibility: hidden;
     width: 2px;

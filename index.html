@@ -20,7 +20,7 @@
       <section class="input">
         <textarea
           name=""
-          id=""
+          id="input"
           placeholder="Ingrese el texto aqui"
           class="input__texttarea"
         ></textarea>
@@ -33,12 +33,16 @@
           <p class="warning__paragraph">Solo letras minúsculas y sin acentos</p>
         </div>
         <div class="container__button">
-          <button class="button button--blue">Encriptar</button>
-          <button class="button">Desencriptar</button>
+          <button class="button button--blue" id="encrypter">Encriptar</button>
+          <button class="button" id="decrypt">Desencriptar</button>
         </div>
       </section>
-      <section class="ouput">
-        <img src="./src/assets/img/Muñeco.svg" alt="muneco" class="ouput__muneco" />
+      <section class="ouput" id="ouput">
+        <img
+          src="./src/assets/img/Muñeco.svg"
+          alt="muneco"
+          class="ouput__muneco"
+        />
         <h2 class="ouput__heading">Ningún mensaje fue encontrado</h2>
         <p class="ouput__paragraph">
           Ingresa el texto que desees encriptar o desencriptar.
