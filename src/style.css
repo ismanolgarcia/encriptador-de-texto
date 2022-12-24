@@ -42,13 +42,15 @@ body {
   font-size: 32px;
   margin-left: 70px;
   color: var(--color-dark-boton);
-  place-content: red;
 }
 
 .input__texttarea::placeholder {
   color: var(--color-dark-boton);
 }
 
+.input__texttarea--red::placeholder {
+  color: red;
+}
 .input__texttarea:focus {
   outline: none;
 }
@@ -86,9 +88,12 @@ body {
   background-color: var(--color-dark-boton);
   color: var(--color-white);
 }
+
 .button--copy {
-  width: 100% !important
+  margin-top: 20px;
+  width: 100% !important;
 }
+
 .ouput {
   width: 300px;
   height: 650px;
@@ -106,12 +111,13 @@ body {
   width: 220px;
   height: 570px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   font-size: 20px;
   padding: 40px;
   text-align: left;
   align-items: flex-start;
   word-break: break-all;
+  overflow: auto;
 }
 
 .ouput__muneco {
@@ -188,6 +194,9 @@ body {
   .ouput__muneco {
     visibility: hidden;
     width: 2px;
+  }
+  .button--copy {
+    margin-top: 250px;
   }
 }
 
