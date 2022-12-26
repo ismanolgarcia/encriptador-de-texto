@@ -52,10 +52,16 @@ function desencriptar() {
 }
 
 function copy() {
-  value = ouput.innerHTML.replaceAll(
-    '<button class="button button--copy">copiar el texto</button>',
-    ''
-  );
+  value = ouput.innerHTML
+    .replaceAll(
+      '<button class="button button--copy">copiar el texto</button>',
+      ' '
+    )
+    .replaceAll(
+      '<button class="button button--copy">Texto copiado!</button>',
+      ' '
+    )
+    .replaceAll('<br>', ' ');
   navigator.clipboard.writeText(value);
   newButton.textContent = 'Texto copiado!';
 }
