@@ -151,7 +151,7 @@ body {
   margin: 0 10px;
 }
 
-@media screen and (max-width: 1333px) {
+@media screen and (max-width: 1440px) {
   .input {
     width: 50%;
     height: 480px;
@@ -164,7 +164,7 @@ body {
     width: 200px;
   }
   .footer {
-    bottom: 0;
+    bottom: auto;
   }
 }
 @media screen and (max-width: 880px) {
